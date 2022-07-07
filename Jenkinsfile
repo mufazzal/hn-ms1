@@ -27,7 +27,6 @@ pipeline {
                     
                     sh """
                         docker build \
-                            -f Docker/Dockerfile \
                             -t $dockerHubRepo:latest \
                             -t $dockerHubRepo:$BUILD_ID \
                             -t $dockerHubRepo:$GIT_COMMIT \
